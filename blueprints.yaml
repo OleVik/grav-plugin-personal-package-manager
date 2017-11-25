@@ -1,0 +1,27 @@
+name: Personal Package Manager
+version: 0.1.0
+description: Returns JSON-formatted Grav-environment data.
+icon: plug
+author:
+  name: Ole Vik
+  email: git@olevik.net
+homepage: https://github.com/ole-vik/grav-plugin-personal-package-manager
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/ole-vik/grav-plugin-personal-package-manager/issues
+docs: https://github.com/ole-vik/grav-plugin-personal-package-manager/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
